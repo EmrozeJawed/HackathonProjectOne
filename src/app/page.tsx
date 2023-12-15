@@ -1,8 +1,13 @@
 "use client"
-import Image from 'next/image'
+import Image from 'next/image';
 import { CldUploadButton, CldImage } from 'next-cloudinary';
 import { useState } from 'react';
+import Upload from './gallery/upload';
 
+interface UploadImage {
+  event: "success"
+  info: {public_id: string}
+}
 
 
 export default function Home() {
@@ -13,7 +18,7 @@ export default function Home() {
   {/* Upload Button */}
 <CldUploadButton uploadPreset="zmgctfld" onUpload={(results,) => {
    let res = results as UploadImage
-   setImageId(res.info.public_id)
+   setImageId(res.info.public_id) 
 }} 
 />
 
