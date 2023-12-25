@@ -8,7 +8,9 @@ import {
 } from "@/components/ui/tabs"
 import { CldImage } from "next-cloudinary"
 
-export function TabsDemo({ src }: { src: string }) {
+
+
+export function TabsDemo({ src, blur}: { src: string, blur:number}) {
   return (
     <Tabs defaultValue="orignal" className="w-full py-4 px-5">
       <TabsList className="w-full flex-wrap h-auto justify-start">
@@ -55,7 +57,9 @@ export function TabsDemo({ src }: { src: string }) {
             src={src}
             sizes="100vw"
             alt="Description of my image"
-            blur={800}
+            effects={[{
+               blur: 800
+            }]}
           />
         </div>
       </TabsContent>
@@ -75,7 +79,9 @@ export function TabsDemo({ src }: { src: string }) {
             src={src}
             sizes="100vw"
             alt="Description of my image"
-            grayscale={true}
+             effects={[{
+                 grayscale:true
+             }]}
           />
         </div>
       </TabsContent>
@@ -95,7 +101,9 @@ export function TabsDemo({ src }: { src: string }) {
             src={src}
             sizes="100vw"
             alt="Description of my image"
-            oilPaint={true}
+          effects={[{
+             oilPaint: true
+          }]}
           />
         </div>
       </TabsContent>
@@ -115,7 +123,9 @@ export function TabsDemo({ src }: { src: string }) {
             src={src}
             sizes="100vw"
             alt="Description of my image"
-            improve={true}
+            effects={[{
+              improve:true
+            }]}
           />
         </div>
       </TabsContent>
@@ -135,7 +145,9 @@ export function TabsDemo({ src }: { src: string }) {
             src={src}
             sizes="100vw"
             alt="Description of my image"
-            vibrance={true}
+            effects={[{
+              vibrance:true
+            }]}
           />
         </div>
       </TabsContent>
