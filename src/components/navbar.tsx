@@ -12,8 +12,8 @@ export const Navbar = () => {
                     {/* <Search />
                     <UserNav /> */}
                      <Avatar>
-      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-      <AvatarFallback>EMI</AvatarFallback>
+      <AvatarImage src="nooklogo.jpg" alt="@shadcn" />
+      <AvatarFallback>NN</AvatarFallback>
     </Avatar>
                 </div>
             </div>

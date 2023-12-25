@@ -5,7 +5,6 @@ import { AddTags } from './action';
 import { useState } from 'react';
 import { BiEditAlt } from "react-icons/bi";
 import Link from 'next/link';
-import AlbumDialog from './albumDialog';
 
 
 
@@ -41,10 +40,6 @@ onClick={()=>{
     <BiEditAlt className='w-8 h-8 cursor-pointer text-white hover:text-red-500 duration-300' />
   </Link>
   </div>
-  {/* add to album */}
-  <div className='absolute bottom-1 left-1'>
-    <AlbumDialog imageData={src}/>
-    </div>
 </div>
   )
 }
