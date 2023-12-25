@@ -10,7 +10,7 @@ import { CldImage } from "next-cloudinary"
 
 
 
-export function TabsDemo({ src, blur}: { src: string, blur:number}) {
+export function TabsDemo({ src,}: { src: string}) {
   return (
     <Tabs defaultValue="orignal" className="w-full py-4 px-5">
       <TabsList className="w-full flex-wrap h-auto justify-start">
